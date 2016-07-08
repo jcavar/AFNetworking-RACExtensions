@@ -13,18 +13,18 @@ Pod::Spec.new do |s|
 
   s.subspec 'ExperimentalProgressCallbacks' do |ss|
     ss.source_files = 'RACAFNetworking/RACSubscriber+AFProgressCallbacks.{h,m}'
-    ss.dependency 'ReactiveCocoa', :podspec => 'https://gist.githubusercontent.com/PaulTaykalo/04f8e2ee25b9d57f03455ccafd541b34/raw/e94f3bec7a9450ecd0f0cdc9b4899deb0b91d758/ReactiveCocoa.podspec.json'
+    ss.dependency 'ReactiveCocoa', '~> 4.2'
   end
 
   s.subspec 'NSURLConnection' do |ss|
     ss.dependency 'AFNetworking/NSURLConnection', '~> 2.0'
-    ss.dependency 'ReactiveCocoa', :podspec => 'https://gist.githubusercontent.com/PaulTaykalo/04f8e2ee25b9d57f03455ccafd541b34/raw/e94f3bec7a9450ecd0f0cdc9b4899deb0b91d758/ReactiveCocoa.podspec.json'
+    ss.dependency 'ReactiveCocoa', '~> 4.2'
     ss.source_files = 'RACAFNetworking/AFURLConnectionOperation+RACSupport.{h,m}', 'RACAFNetworking/AFHTTPRequestOperationManager+RACSupport.{h,m}'
   end
 
   s.subspec 'NSURLSession' do |ss|
     ss.dependency 'AFNetworking/NSURLSession', '~> 2.0'
-    ss.dependency 'ReactiveCocoa', :podspec => 'https://gist.githubusercontent.com/PaulTaykalo/04f8e2ee25b9d57f03455ccafd541b34/raw/e94f3bec7a9450ecd0f0cdc9b4899deb0b91d758/ReactiveCocoa.podspec.json'
+    ss.dependency 'ReactiveCocoa', '~> 4.2'
     ss.source_files = 'RACAFNetworking/AFHTTPSessionManager+RACSupport.{h,m}'
   end
 end
