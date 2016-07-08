@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.default_subspecs = 'NSURLConnection', 'NSURLSession'
 
   s.subspec 'ExperimentalProgressCallbacks' do |ss|
-    ss.dependency 'ReactiveCocoa/Core', '~> 2.0'
+    ss.dependency 'ReactiveCocoa', '~> 4.2'
     ss.source_files = 'RACAFNetworking/RACSubscriber+AFProgressCallbacks.{h,m}'
   end
 
